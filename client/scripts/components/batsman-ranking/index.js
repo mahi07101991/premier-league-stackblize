@@ -57,6 +57,7 @@ class index extends PureComponent {
     });
   };
   render() {
+     if(!this.props.batsmanScores) return <div>Loading...</div>
     return (
       <div>
         <table className="table table-bordered container">
