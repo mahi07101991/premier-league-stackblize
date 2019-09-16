@@ -1,0 +1,48 @@
+.vertical-menu {
+	width: 200px;
+	a {
+		background-color: $cream;
+		color: $black;
+		display: block;
+		padding: 12px;
+		text-decoration: none;
+		&:hover {
+			background-color: $cement;
+		}
+	}
+	a.active {
+		background-color: $light-green;
+		color: $white;
+	}
+}
+.navbar-brand {
+	color: $light-green !important;
+	&:hover {
+		color: $cement !important;
+	}
+}
+ul.navbar-nav.mr-auto.aside-nav-bar {
+	@media (min-width: 992px) {
+		flex-direction: column;
+		.collapse:not(.show) {
+			display: block;
+		}
+	}
+	
+	.nav-item {
+		color: #fd7e14;
+		a {
+			&:focus {
+				color: #fd7e14;
+			}
+			&:active {
+				color: #fd7e14;
+			}
+		}
+	}
+	.nav-item.active {
+		a {
+			color: #fd7e14;
+		}
+	}
+}
