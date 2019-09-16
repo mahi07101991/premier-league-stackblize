@@ -48,7 +48,9 @@
     "webpack-dev-server": "3.8.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
+    "start": "run-p start:client start:server",
+    "start:client": "webpack-dev-server --open --mode development",
+    "start:server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
